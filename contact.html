@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обратная связь — Кулинарные рецепты</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Обратная связь</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="section.html">Рецепт дня</a></li>
+        <li><a href="contact.html">Обратная связь</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form action="contact.php" method="post" class="feedback-form">
+      <label>
+        Ваше имя:<br>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email:<br>
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Сообщение:<br>
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <footer>
+    Выполнил: Сазонов С.О., 12.07.2025
+  </footer>
+
+</body>
+</html>
