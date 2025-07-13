@@ -20,7 +20,7 @@
   </header>
 
   <main class="container">
-    <form action="contact.php" method="post" class="feedback-form">
+    <form id="feedback-form" class="feedback-form">
       <label>
         Ваше имя:<br>
         <input type="text" name="name" required>
@@ -34,6 +34,8 @@
         <textarea name="message" rows="6" required></textarea>
       </label>
       <button type="submit">Отправить</button>
+      <!-- сюда будем выводить статус отправки -->
+      <p id="form-status" style="margin-top:10px;"></p>
     </form>
   </main>
 
@@ -41,7 +43,7 @@
     Выполнил: Сазонов С.О., 12.07.2025
   </footer>
 
-   <script>
+  <script>
     document.getElementById('feedback-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = e.target;
